@@ -239,6 +239,21 @@
     }
 
 }
+
+.mobile-banner{
+    display: none;
+}
+@media (max-width: 500px) {
+
+    .desktop-banner{
+        display: none !important;
+    }
+
+    .mobile-banner{
+        display: block !important;
+    }
+
+}
   
 
 @media (max-width: 500px) {
