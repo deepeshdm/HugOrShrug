@@ -306,7 +306,7 @@
         }
 
         .comment-card{
-            width: 22rem;
+            width: 90%rem !important;
         }
 
         .interest-card-list{
