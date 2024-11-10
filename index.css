@@ -147,7 +147,39 @@
 
 
 
+.interest-card{
 
+    display: flex;
+    width: 18rem;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.65rem 1rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.04);
+
+
+    .interest-img{
+        border-radius: 0.5rem;
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    .interest-name{
+        font-family: DM Sans;
+        font-size: 1rem;
+        font-weight: 500;
+        color: rgba(3, 3, 3, 0.6);        
+    }
+
+    .interest-score{
+        font-family: DM Sans;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: rgba(3, 3, 3, 1);        
+    }
+}
 
 
 
