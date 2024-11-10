@@ -214,3 +214,65 @@
 }
 
 
+
+
+
+
+/* ------------------------------------MEDIA QUERIES------------------------------------------------------------- */
+
+
+@media (max-width: 950px) {
+
+    .navbar-container .tabs{
+        display: none;
+    }
+
+    .navbar-container{
+       padding: 0.25rem 2rem;
+    }
+
+}
+  
+
+@media (max-width: 500px) {
+
+    .navbar-container .purple-action-btn{
+        display: none;
+    }
+
+    .community-section {
+
+        padding: 2rem 0 2rem 0;
+
+        .user-card{
+            width: 80%;
+            flex-direction: row;
+
+            .pic{
+                width:3.5rem;
+                height:3.5rem;
+            }
+        }
+
+        .sora-black-lg{
+            font-size: 1.35rem;
+        }
+        
+        .dmsans-black-md{
+            font-size: 0.85rem;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
