@@ -50,6 +50,7 @@
     background: rgba(255, 255, 255, 1);
     padding: 1.5rem;
     border-radius: 1rem;
+    cursor: pointer;
 
     .pic{
         border-radius: 0.5rem;
@@ -97,6 +98,7 @@
     border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.04);
     width: 23rem;
+    cursor: pointer;
 
     .comment{
         font-family: DM Sans;
@@ -158,7 +160,7 @@
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.04);
-
+    cursor: pointer;
 
     .interest-img{
         border-radius: 0.5rem;
@@ -182,6 +184,33 @@
 }
 
 
+.info-tabs{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 0.85rem 1.5rem;
+    border-radius: 1rem;
+    background: rgba(241, 247, 255, 1);
+    font-family: Sora;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(107, 114, 128, 1);
 
+    div{
+        cursor: pointer;
+    }
+
+    .selected-tab{
+        padding: 6px 12px 6px 12px;
+        border: 1px solid var(--Boarder-DEFAULT, rgba(229, 231, 235, 1));
+        border-radius: 0.5rem;
+        font-family: Sora;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-align: center;
+        color: rgba(74, 58, 255, 1);
+        background: white;
+    }
+}
 
 
