@@ -214,7 +214,12 @@
 }
 
 
-
+.interest-card-list{
+    margin-top:1rem;
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 80%;
+}
 
 
 
@@ -261,6 +266,56 @@
         .dmsans-black-md{
             font-size: 0.85rem;
         }
+    }
+
+
+    .lower-section{
+
+        padding: 2rem 0 2rem 0;
+
+        .sora-black-lg{
+            font-size: 1.35rem;
+            width: 90%;
+        }
+
+        .dmsans-black-md{
+            font-size: 0.95rem;
+            width: 90%;
+        }
+
+        .info-tabs{
+            width: 75%;
+            gap: 1.5rem;
+        }
+
+        .comment-card{
+            width: 22rem;
+        }
+
+        .interest-card-list{
+            width: 100%;
+
+            .interest-card{
+                width: 80%;
+            }
+        }
+    }
+
+    @media (max-width: 450px) {
+
+        .interest-name{
+            font-size: 1.1rem !important;
+        }
+
+        .interest-img{
+            width: 2.5rem !important;
+            height: 2.5rem !important;
+        }
+
+        .interest-score{
+            font-size: 1.65rem !important;
+        }
+
     }
 
 }
