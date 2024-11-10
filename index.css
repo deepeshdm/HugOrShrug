@@ -70,6 +70,8 @@
 .footer{
     display: flex;
     align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 5.5rem;
     background: rgba(74, 58, 255, 1);
@@ -316,6 +318,10 @@
             font-size: 1.65rem !important;
         }
 
+    }
+
+    .footer{
+        padding: 1rem !important;
     }
 
 }
