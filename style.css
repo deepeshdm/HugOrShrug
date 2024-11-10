@@ -158,7 +158,13 @@ html,body{
   color: rgba(23, 15, 73, 1);
 }
 
-
+.dmsans-white-md{
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: Center;
+  color: rgb(255, 255, 255);
+}
 
 
 
