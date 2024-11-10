@@ -1,0 +1,84 @@
+
+
+.hover-btn{
+   &:hover{
+    opacity: 1 !important;
+    background: rgb(225, 225, 225) !important;
+   }
+}
+
+
+
+@media (max-width: 599px) {
+
+    .custom-input {
+        width: 25rem !important;
+    }
+
+    .blue-action-btn {
+        width: 27rem !important;
+    }
+
+    .main-title{
+        font-size: 2rem;
+    }
+
+    .title2{
+        font-size: 1.1rem;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .custom-input {
+        width: 20rem !important;
+    }
+
+    .blue-action-btn {
+        width: 22rem !important;
+    }
+
+    .main-title{
+        font-size: 2rem;
+    }
+
+    .title2{
+        font-size: 1.1rem;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .custom-input {
+        width: 18rem !important;
+    }
+
+    .blue-action-btn {
+        width: 20rem !important;
+    }
+
+    .main-title{
+        font-size: 1.75rem;
+    }
+
+    .title2{
+        font-size: 1rem;
+    }
+
+    .navbar{
+        padding: 1rem 2rem !important;
+    }
+}
+
+/* Apply styles when the orientation is landscape */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+
+    .main-bg {
+      padding-bottom: 10rem;
+    }
+  
+  }
