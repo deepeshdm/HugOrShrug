@@ -191,3 +191,29 @@
 }
 
 
+@media (max-width: 850px) {
+
+    .profile-card{
+        width: 80% !important;
+    }
+
+    .convobox{
+        width: 80% !important;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .tags{
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .convotext{
+        flex-direction: column;
+        width: 98% !important;
+    }
+
+}
+
