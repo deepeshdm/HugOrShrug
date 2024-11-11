@@ -200,10 +200,10 @@
     .convobox{
         width: 80% !important;
     }
-
 }
 
-@media (max-width: 500px) {
+
+@media (max-width: 650px) {
 
     .tags{
         flex-wrap: wrap;
@@ -215,5 +215,8 @@
         width: 98% !important;
     }
 
+    .imgtext{
+        flex-direction: column;
+    }
 }
 
