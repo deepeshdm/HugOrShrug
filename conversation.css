@@ -2,7 +2,7 @@
 
 .main-container{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .navbar-container{
@@ -47,11 +47,12 @@
 .middle-sec{
     display: flex;
     align-items: start;
+    flex-wrap: wrap;
     gap: 1.85rem;
     background: rgba(241, 247, 255, 1);
     width: 100%;
     height: 98%;
-    padding: 2rem 0 0 0;
+    padding: 2rem 0 2rem 0;
     justify-content: center;
 }
 
