@@ -205,6 +205,11 @@
 
 @media (max-width: 650px) {
 
+    .convo-img{
+        width: 8rem;
+        height: 8rem;
+    }
+
     .tags{
         flex-wrap: wrap;
         width: 80%;
