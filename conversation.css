@@ -39,6 +39,9 @@
     justify-content: space-between;
     padding: 1rem 5.5rem;
     background: rgba(74, 58, 255, 1);
+    position: fixed;
+    width: -webkit-fill-available;
+    bottom: -1px;
 }
 
 
