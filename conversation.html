@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="flex-gap-1">
-                    <button class="purple-action-btn">Share your thoughts</button>
+                    <button class="purple-action-btn" id="openDialogBtn2">Share your thoughts</button>
                     <div class="profile-option">
                         <img class="profile" src="https://randomuser.me/api/portraits/men/18.jpg">
                         <img style="width:0.75rem;" src="assets/arrow-down.svg">
@@ -248,10 +248,14 @@
 
             const dialog = document.getElementById('myDialog');
             const openDialogBtn = document.getElementById('openDialogBtn');
+            const openDialogBtn2 = document.getElementById('openDialogBtn2');
             const closeDialogBtn = document.getElementById('closeDialogBtn');
         
             // Open dialog on button click
             openDialogBtn.addEventListener('click', () => {
+              dialog.showModal();
+            });
+            openDialogBtn2.addEventListener('click', () => {
               dialog.showModal();
             });
         
