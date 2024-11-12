@@ -78,7 +78,7 @@
                                 <div class="greypart"> #food </div>
                                 <div class="greypart"> #tea </div>
                             </div>
-                            <img class="clickable" src="assets/add-button-circle.svg" />
+                            <img id="openDialogBtn" class="clickable" src="assets/add-button-circle.svg" />
                         </div>
                         <div class="flex-gap-1 imgtext" style="align-items: flex-start;">
                             <img class="convo-img" src="https://picsum.photos/200/300?random=1">
@@ -113,7 +113,7 @@
                                 <div class="greypart"> #food </div>
                                 <div class="greypart"> #tea </div>
                             </div>
-                            <img class="clickable" src="assets/add-button-circle.svg" />
+                            <img id="openDialogBtn" class="clickable" src="assets/add-button-circle.svg" />
                         </div>
                         <div class="flex-gap-1 imgtext" style="align-items: flex-start;">
                             <img class="convo-img" src="https://picsum.photos/200/300?random=1">
@@ -148,7 +148,7 @@
                                 <div class="greypart"> #food </div>
                                 <div class="greypart"> #tea </div>
                             </div>
-                            <img class="clickable" src="assets/add-button-circle.svg" />
+                            <img id="openDialogBtn" class="clickable" src="assets/add-button-circle.svg" />
                         </div>
                         <div class="flex-gap-1 imgtext" style="align-items: flex-start;">
                             <img class="convo-img" src="https://picsum.photos/200/300?random=1">
@@ -196,6 +196,62 @@
             </div>
             <div class="dmsans-white-md"> © HugOrShrug 2024 </div>
         </footer>
+
+        <!-- DIALOG -->
+        <dialog id="myDialog" class="input-dialog">
+            <div class="flex-col-gap-15" style="width:100%;">
+                <div style="width:100%;">
+                    <div class="sora-black-lg2" style="text-align: left;"> Hug or shrug </div>
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Category</div>
+                    <select class="custom-input" style="border-radius:0.5rem;">
+                        <option>Entertainment and Leisure</option>
+                        <option>Entertainment and Leisure</option>
+                        <option>Entertainment and Leisure</option>
+                    </select>
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Title *</div>
+                    <input class="custom-input" value="Godzilla" />
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">#Tags</div>
+                    <input class="custom-input" value="#movie" />
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Note</div>
+                    <textarea placeholder="Type your notes here ..." style="height:3rem;" class="custom-input"></textarea>
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Link</div>
+                    <input class="custom-input" value="https://godzilla.com/" />
+                </div>
+                <div class="flex-col-gap-05" style="width:100%;">
+                    <button class="purple-action-btn" style="width:100%;"> Submit </button>
+                    <button class="white-action-btn" style="width:100%;"  id="closeDialogBtn"> Cancel </button>
+                </div>
+            </div>
+        </dialog>
+
+        <script>
+
+            const dialog = document.getElementById('myDialog');
+            const openDialogBtn = document.getElementById('openDialogBtn');
+            const closeDialogBtn = document.getElementById('closeDialogBtn');
+        
+            // Open dialog on button click
+            openDialogBtn.addEventListener('click', () => {
+              dialog.showModal();
+            });
+        
+            // Close dialog on button click
+            closeDialogBtn.addEventListener('click', () => {
+              dialog.close();
+            });
+
+        </script>
+
     </body>
 </html>
 
