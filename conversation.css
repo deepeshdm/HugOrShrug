@@ -213,7 +213,7 @@
     .tags{
         flex-wrap: wrap;
         width: 80%;
-    }
+    } 
 
     .convotext{
         flex-direction: column;
