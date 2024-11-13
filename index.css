@@ -54,8 +54,8 @@
 
     .pic{
         border-radius: 0.5rem;
-        width: 3rem;
-        height: 3rem;
+        width: 4.5rem;
+        height: 4.5rem;
     }
 
     .name{
@@ -223,9 +223,24 @@
     width: 80%;
 }
 
-
+.greytext{
+    color: rgba(106, 106, 106, 1);
+    font-family: DM Sans;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
 
 /* ------------------------------------MEDIA QUERIES------------------------------------------------------------- */
+
+
+@media (min-width: 900px) {
+
+    .userlist{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+        gap: 2rem; /* Adds space between the columns */
+    }
+}
 
 
 @media (max-width: 950px) {
@@ -268,7 +283,7 @@
 
         .user-card{
             width: 80%;
-            flex-direction: row;
+            /* flex-direction: row; */
 
             .pic{
                 width:3.5rem;
