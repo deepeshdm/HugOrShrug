@@ -1,0 +1,370 @@
+
+
+.main-container{
+
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.profile-option{
+    display: flex;
+    align-items:center;
+    gap: 1.5rem;
+    border: 1.5px solid #EFF0F6;
+    padding: 0.45rem 1rem 0.45rem 0.45rem;
+    border-radius: 1.5rem;
+    width: 4.5rem;
+    height: 2.1rem;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px 0px #080F340A;
+
+    .profile{
+        border-radius: 6rem;
+        width: 2.25rem;
+    }
+
+}
+
+
+.community-section{
+    background: rgba(241, 247, 255, 1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0 5rem 0;
+    gap: 1.75rem;
+}
+
+.user-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 1);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    .pic{
+        border-radius: 0.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .name{
+        font-family: DM Sans;
+        font-size: 1rem;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 1);
+    }
+
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 5.5rem;
+    background: rgba(74, 58, 255, 1);
+}
+
+
+.lower-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0 5rem 0;
+    gap: 1.75rem;
+}
+
+
+
+.comment-card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px 0px 0px 0px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.04);
+    width: 23rem;
+    cursor: pointer;
+
+    .comment{
+        font-family: DM Sans;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+        color: rgba(0, 0, 0, 1);
+    }
+
+    .likedby{
+        font-family: DM Sans;
+        font-size: 0.9rem;
+        font-weight: 400;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .likeimg{
+        width:1.1rem;
+    }
+
+    .redpart{
+        padding: 0.55rem 0.85rem;
+        border-radius: 10px;
+        background: rgba(251, 237, 234, 1);
+        font-family: DM Sans;
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: rgba(174, 36, 0, 1);
+    }
+
+    .greenpart{
+        padding: 0.55rem 0.85rem;
+        border-radius: 10px;
+        background: rgba(218, 249, 235, 1);
+        font-family: DM Sans;
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: rgba(0, 126, 68, 1);
+    }
+
+}
+
+
+
+.interest-card{
+
+    display: flex;
+    width: 18rem;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.65rem 1rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+
+    .interest-img{
+        border-radius: 0.5rem;
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    .interest-name{
+        font-family: DM Sans;
+        font-size: 1rem;
+        font-weight: 500;
+        color: rgba(3, 3, 3, 0.6);        
+    }
+
+    .interest-score{
+        font-family: DM Sans;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: rgba(3, 3, 3, 1);        
+    }
+}
+
+
+.info-tabs{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 0.85rem 1.5rem;
+    border-radius: 1rem;
+    background: rgba(241, 247, 255, 1);
+    font-family: Sora;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(107, 114, 128, 1);
+
+    div{
+        cursor: pointer;
+    }
+
+    .selected-tab{
+        padding: 6px 12px 6px 12px;
+        border: 1px solid var(--Boarder-DEFAULT, rgba(229, 231, 235, 1));
+        border-radius: 0.5rem;
+        font-family: Sora;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-align: center;
+        color: rgba(74, 58, 255, 1);
+        background: white;
+    }
+}
+
+
+.interest-card-list{
+    margin-top:1rem;
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 80%;
+}
+
+@media (max-width: 1200px) {
+    .interest-card{
+        width: 23.5rem;
+    }
+}
+
+
+
+/* ------------------------------------MEDIA QUERIES------------------------------------------------------------- */
+
+
+@media (max-width: 950px) {
+
+    .navbar-container .tabs{
+        display: none;
+    }
+
+    .navbar-container{
+       padding: 0.25rem 2rem;
+    }
+
+}
+
+.mobile-banner{
+    display: none;
+}
+@media (max-width: 500px) {
+
+    .desktop-banner{
+        display: none !important;
+    }
+
+    .mobile-banner{
+        display: block !important;
+    }
+
+}
+  
+
+@media (max-width: 500px) {
+
+    .navbar-container .purple-action-btn{
+        display: none;
+    }
+
+    .community-section {
+
+        padding: 2rem 0 2rem 0;
+
+        .user-card{
+            width: 80%;
+            flex-direction: row;
+
+            .pic{
+                width:3.5rem;
+                height:3.5rem;
+            }
+        }
+
+        .sora-black-lg{
+            font-size: 1.35rem;
+        }
+        
+        .dmsans-black-md{
+            font-size: 0.85rem;
+        }
+    }
+
+
+    .lower-section{
+
+        padding: 2rem 0 2rem 0;
+
+        .sora-black-lg{
+            font-size: 1.35rem;
+            width: 90%;
+        }
+
+        .dmsans-black-md{
+            font-size: 0.95rem;
+            width: 90%;
+        }
+
+        .info-tabs{
+            width: 75%;
+            gap: 1.5rem;
+        }
+
+        .comment-card{
+            width: 90%rem !important;
+        }
+
+        .interest-card-list{
+            width: 100%;
+
+            .interest-card{
+                width: 80%;
+            }
+        }
+    }
+
+    @media (max-width: 450px) {
+
+        .interest-name{
+            font-size: 1.1rem !important;
+        }
+
+        .interest-img{
+            width: 2.5rem !important;
+            height: 2.5rem !important;
+        }
+
+        .interest-score{
+            font-size: 1.65rem !important;
+        }
+
+    }
+
+    .footer{
+        padding: 1rem !important;
+    }
+
+    .card888{
+        width: 80% !important;
+    }
+
+}
+
+
+.card888{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 1);
+}
+
+
+
+
+
+
+
+
+
