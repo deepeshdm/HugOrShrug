@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HugOrShrug</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="favorites.css">
+    </head>
+    <body>
+        <div class="main-container">
+
+            <div class="navbar-container">
+
+                <div class="flex-gap-2">
+                    <img class="clickable" src="assets/logo.png"  onclick="window.location.href='index.html' " />
+                    <div class="flex-gap-2 tabs" style="flex-wrap: wrap;">
+                        <div class="navbar-option clickable" onclick="window.location.href='exploreTopics.html' "> Explore Topics </div>
+                        <div class="navbar-option clickable" onclick="window.location.href='allusers.html' "> Users </div>
+                        <div class="navbar-option clickable" onclick="window.location.href='hugs.html' "> Hugs </div>
+                        <div class="navbar-option clickable" onclick="window.location.href='shrugs.html' "> Shrugs </div>
+                    </div>
+                </div>
+
+                <div class="flex-gap-1">
+                    <!-- <button class="purple-action-btn">Share your thoughts</button> -->
+                    <img class="nav-green-btn" src="assets/green-add-btn.svg">
+                    <div class="profile-option" style="gap:0;">
+                        <img class="profile" src="https://randomuser.me/api/portraits/men/18.jpg">
+                        <!-- <img style="width:0.75rem;" src="assets/arrow-down.svg"> -->
+                         <div class="navbar-select">
+                            <select id="nav-select">
+                                <option selected disabled> select </option>
+                                <option value="myhs.html"> My H&S </option>
+                                <option> My Favorites </option>
+                                <option> Edit Profile </option>
+                                <option> Basic Questions </option>
+                                <option> Log Out </option>
+                             </select>
+
+                             <script>
+                                // Get the select element
+                                const navSelect = document.getElementById('nav-select');
+                            
+                                // Add event listener for 'change' event
+                                navSelect.addEventListener('change', function () {
+                                    const selectedValue = this.value; // Get the selected value
+                            
+                                    if (selectedValue) {
+                                        window.location.href = selectedValue; // Redirect to the selected route
+                                    }
+                                });
+                            </script>
+
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- MIDDLE SECTION -->
+            <div class="community-section">
+
+                <div class="upperpart999">
+                    <div class="sora-black-md2"> My Favourite </div>
+                    <div class="innerpart999">
+                        <div class="flex-gap-05 selected-tab clickable" onclick="window.location.href='favorites2.html' ">
+                            <div>Users</div>
+                        </div>
+                        <div class="flex-gap-05 clickable" onclick="window.location.href='favorites2.html' ">
+                            <div>Hugs and shrugs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-gap-15 userlist" style="flex-wrap: wrap;justify-content: center;"  onclick="window.location.href='user.html' ">
+
+                    <div class="user-card">
+                        <div class="flex-gap-1" style="align-items: center;">
+                            <img class="pic" src="https://randomuser.me/api/portraits/men/8.jpg">
+                            <div class="flex-col-gap-05" style="align-items:start;">
+                                <div class="name"> Esther Howard, 20 </div>
+                                <div class="flex-gap-05 greytext">
+                                    <div> 556 following </div>
+                                    <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="2" cy="2" r="2" fill="#D9D9D9"/>
+                                    </svg>                                    
+                                    <div> 24 likes </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-gap-05">
+                            <div class="blue-section">
+                                <img src="assets/blue-thumbup.svg" />
+                                <span> 445 hugs </span>
+                            </div>
+                            <div class="red-section">
+                                <img src="assets/red-thumbdown.svg" />
+                                <span> 445 shrugs </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-card">
+                        <div class="flex-gap-1" style="align-items: center;">
+                            <img class="pic" src="https://randomuser.me/api/portraits/men/18.jpg">
+                            <div class="flex-col-gap-05" style="align-items:start;">
+                                <div class="name"> Esther Howard, 20 </div>
+                                <div class="flex-gap-05 greytext">
+                                    <div> 556 following </div>
+                                    <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="2" cy="2" r="2" fill="#D9D9D9"/>
+                                    </svg>                                    
+                                    <div> 24 likes </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-gap-05">
+                            <div class="blue-section">
+                                <img src="assets/blue-thumbup.svg" />
+                                <span> 445 hugs </span>
+                            </div>
+                            <div class="red-section">
+                                <img src="assets/red-thumbdown.svg" />
+                                <span> 445 shrugs </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-card">
+                        <div class="flex-gap-1" style="align-items: center;">
+                            <img class="pic" src="https://randomuser.me/api/portraits/men/11.jpg">
+                            <div class="flex-col-gap-05" style="align-items:start;">
+                                <div class="name"> Esther Howard, 20 </div>
+                                <div class="flex-gap-05 greytext">
+                                    <div> 556 following </div>
+                                    <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="2" cy="2" r="2" fill="#D9D9D9"/>
+                                    </svg>                                    
+                                    <div> 24 likes </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-gap-05">
+                            <div class="blue-section">
+                                <img src="assets/blue-thumbup.svg" />
+                                <span> 445 hugs </span>
+                            </div>
+                            <div class="red-section">
+                                <img src="assets/red-thumbdown.svg" />
+                                <span> 445 shrugs </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!-- HIDDEN SECTION -->
+            <div class="lower-section" style="background:rgba(241, 247, 255, 1);">
+
+
+                <div class="flex-col-gap-2 part1">
+
+
+                    <div class="flex-gap-15" style="flex-wrap:wrap; justify-content: center; max-width: 90%;   display:none;"  onclick="window.location.href='conversation.html' ">
+
+                        <div class="comment-card">
+
+                            <div class="flex-gap-05" style="margin-bottom:0.75rem;">
+                                <div class="redpart"> Food and Drink </div>
+                                <div class="greenpart"> #food </div>
+                                <div class="purplepart"> #tea </div>
+                            </div>
+
+                            <div class="flex-gap-05" style="align-items:flex-start;">
+                                <div class="red-section">
+                                    <img class="likeimg" style="width:1.5rem;" src="assets/red-thumbdown.svg" />
+                                </div>
+                                <div class="comment">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun...
+                                </div>
+                            </div>
+                            <hr class="divider"></hr>
+                            <div class="flex-sb">
+                                <div class="likedby"> by KeenWit </div>
+                                <button class="white-action-btn2"> View More </button>
+                            </div>
+                        </div>
+
+                        <div class="comment-card">
+
+                            <div class="flex-gap-05" style="margin-bottom:0.75rem;">
+                                <div class="redpart"> Food and Drink </div>
+                                <div class="greenpart"> #food </div>
+                                <div class="purplepart"> #tea </div>
+                            </div>
+
+                            <div class="flex-gap-05" style="align-items:flex-start;">
+                                <div class="blue-section">
+                                    <img class="likeimg" style="width:1.5rem;" src="assets/blue-thumbup.svg" />
+                                </div>
+                                <div class="comment">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun...
+                                </div>
+                            </div>
+                            <hr class="divider"></hr>
+                            <div class="flex-sb">
+                                <div class="likedby"> by KeenWit </div>
+                                <button class="white-action-btn2"> View More </button>
+                            </div>
+                        </div>
+
+                        <div class="comment-card">
+
+                            <div class="flex-gap-05" style="margin-bottom:0.75rem;">
+                                <div class="redpart"> Food and Drink </div>
+                                <div class="greenpart"> #food </div>
+                                <div class="purplepart"> #tea </div>
+                            </div>
+
+                            <div class="flex-gap-05" style="align-items:flex-start;">
+                                <div class="blue-section">
+                                    <img class="likeimg" style="width:1.5rem;" src="assets/blue-thumbup.svg" />
+                                </div>
+                                <div class="comment">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun...
+                                </div>
+                            </div>
+                            <hr class="divider"></hr>
+                            <div class="flex-sb">
+                                <div class="likedby"> by KeenWit </div>
+                                <button class="white-action-btn2"> View More </button>
+                            </div>
+                        </div>
+
+                        <div class="comment-card">
+
+                            <div class="flex-gap-05" style="margin-bottom:0.75rem;">
+                                <div class="redpart"> Food and Drink </div>
+                                <div class="greenpart"> #food </div>
+                                <div class="purplepart"> #tea </div>
+                            </div>
+
+                            <div class="flex-gap-05" style="align-items:flex-start;">
+                                <div class="red-section">
+                                    <img class="likeimg" style="width:1.5rem;" src="assets/red-thumbdown.svg" />
+                                </div>
+                                <div class="comment">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun...
+                                </div>
+                            </div>
+                            <hr class="divider"></hr>
+                            <div class="flex-sb">
+                                <div class="likedby"> by KeenWit </div>
+                                <button class="white-action-btn2"> View More </button>
+                            </div>
+                        </div>
+
+                        <div class="comment-card">
+
+                            <div class="flex-gap-05" style="margin-bottom:0.75rem;">
+                                <div class="redpart"> Food and Drink </div>
+                                <div class="greenpart"> #food </div>
+                                <div class="purplepart"> #tea </div>
+                            </div>
+
+                            <div class="flex-gap-05" style="align-items:flex-start;">
+                                <div class="red-section">
+                                    <img class="likeimg" style="width:1.5rem;" src="assets/red-thumbdown.svg" />
+                                </div>
+                                <div class="comment">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun...
+                                </div>
+                            </div>
+                            <hr class="divider"></hr>
+                            <div class="flex-sb">
+                                <div class="likedby"> by KeenWit </div>
+                                <button class="white-action-btn2"> View More </button>
+                            </div>
+                        </div>
+
+                        <div class="comment-card">
+
+                            <div class="flex-gap-05" style="margin-bottom:0.75rem;">
+                                <div class="redpart"> Food and Drink </div>
+                                <div class="greenpart"> #food </div>
+                                <div class="purplepart"> #tea </div>
+                            </div>
+
+                            <div class="flex-gap-05" style="align-items:flex-start;">
+                                <div class="blue-section">
+                                    <img class="likeimg" style="width:1.5rem;" src="assets/blue-thumbup.svg" />
+                                </div>
+                                <div class="comment">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun...
+                                </div>
+                            </div>
+                            <hr class="divider"></hr>
+                            <div class="flex-sb">
+                                <div class="likedby"> by KeenWit </div>
+                                <button class="white-action-btn2"> View More </button>
+                            </div>
+                        </div>
+
+                        <div class="comment-card">
+
+                            <div class="flex-gap-05" style="margin-bottom:0.75rem;">
+                                <div class="redpart"> Food and Drink </div>
+                                <div class="greenpart"> #food </div>
+                                <div class="purplepart"> #tea </div>
+                            </div>
+
+                            <div class="flex-gap-05" style="align-items:flex-start;">
+                                <div class="red-section">
+                                    <img class="likeimg" style="width:1.5rem;" src="assets/red-thumbdown.svg" />
+                                </div>
+                                <div class="comment">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun...
+                                </div>
+                            </div>
+                            <hr class="divider"></hr>
+                            <div class="flex-sb">
+                                <div class="likedby"> by KeenWit </div>
+                                <button class="white-action-btn2"> View More </button>
+                            </div>
+                        </div>
+
+                        <div class="comment-card">
+
+                            <div class="flex-gap-05" style="margin-bottom:0.75rem;">
+                                <div class="redpart"> Food and Drink </div>
+                                <div class="greenpart"> #food </div>
+                                <div class="purplepart"> #tea </div>
+                            </div>
+
+                            <div class="flex-gap-05" style="align-items:flex-start;">
+                                <div class="red-section">
+                                    <img class="likeimg" style="width:1.5rem;" src="assets/red-thumbdown.svg" />
+                                </div>
+                                <div class="comment">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun...
+                                </div>
+                            </div>
+                            <hr class="divider"></hr>
+                            <div class="flex-sb">
+                                <div class="likedby"> by KeenWit </div>
+                                <button class="white-action-btn2"> View More </button>
+                            </div>
+                        </div>
+
+                        <div class="comment-card">
+
+                            <div class="flex-gap-05" style="margin-bottom:0.75rem;">
+                                <div class="redpart"> Food and Drink </div>
+                                <div class="greenpart"> #food </div>
+                                <div class="purplepart"> #tea </div>
+                            </div>
+
+                            <div class="flex-gap-05" style="align-items:flex-start;">
+                                <div class="red-section">
+                                    <img class="likeimg" style="width:1.5rem;" src="assets/red-thumbdown.svg" />
+                                </div>
+                                <div class="comment">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun...
+                                </div>
+                            </div>
+                            <hr class="divider"></hr>
+                            <div class="flex-sb">
+                                <div class="likedby"> by KeenWit </div>
+                                <button class="white-action-btn2"> View More </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+        <footer class="footer">
+            <img src="assets/logo.png"  onclick="window.location.href='index.html' " />
+            <div class="flex-gap-2" style="flex-wrap: wrap;">
+                <div class="dmsans-white-md clickable "> About us </div>
+                <div class="dmsans-white-md clickable"> Contact us </div>
+                <div class="dmsans-white-md clickable"> Blogs </div>
+            </div>
+            <div class="dmsans-white-md"> © HugOrShrug 2024 </div>
+        </footer>
+    </body>
+</html>
+
