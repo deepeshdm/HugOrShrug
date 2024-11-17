@@ -74,7 +74,7 @@
                         <div class="dmsans-black-md"> Answer the question or come up with your own! </div>
                     </div>
     
-                    <button class="purple-action-btn askquesbtn" style="margin-right:2rem;"> Add your question </button>
+                    <button class="purple-action-btn askquesbtn" style="margin-right:2rem;"  id="openDialogBtn"> Add your question </button>
                 </div>
 
                 <div class="card-container">
@@ -142,6 +142,7 @@
 
                 </div>
 
+                <button class="purple-action-btn askquesbtn2" style="margin-right:2rem;display:none;"  id="openDialogBtn2"> Add your question </button>
 
             </div>
 
@@ -156,6 +157,58 @@
             </div>
             <div class="dmsans-white-md"> © HugOrShrug 2024 </div>
         </footer>
+
+
+
+
+
+        <!-- DIALOG -->
+        <dialog id="myDialog" class="input-dialog">
+            <div class="flex-col-gap-15" style="width:100%;">
+                <div style="width:100%;">
+                    <div class="sora-black-lg2" style="text-align: left;"> Add questions </div>
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Your question</div>
+                    <input class="custom-input" placeholder="Type your question here" />
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Answer</div>
+                    <textarea placeholder="Type your Answer here ..." style="height:6rem;" class="custom-input"></textarea>
+                </div>
+                <div class="flex-col-gap-05" style="width:100%;">
+                    <button class="purple-action-btn" style="width:100%;"> Submit </button>
+                    <button class="white-action-btn" style="width:100%;"  id="closeDialogBtn"> Cancel </button>
+                </div>
+            </div>
+        </dialog>
+
+        <script>
+
+            const dialog = document.getElementById('myDialog');
+            const openDialogBtn = document.getElementById('openDialogBtn');
+            const openDialogBtn2 = document.getElementById('openDialogBtn2');
+            const closeDialogBtn = document.getElementById('closeDialogBtn');
+        
+            // Open dialog on button click
+            openDialogBtn.addEventListener('click', () => {
+                dialog.showModal();
+            });
+            openDialogBtn2.addEventListener('click', () => {
+                dialog.showModal();
+            });
+        
+            // Close dialog on button click
+            closeDialogBtn.addEventListener('click', () => {
+                dialog.close();
+            });
+
+        </script>
+
+
+
+
+
     </body>
 </html>
 
