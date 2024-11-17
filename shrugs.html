@@ -34,13 +34,28 @@
                         <img class="profile" src="https://randomuser.me/api/portraits/men/18.jpg">
                         <!-- <img style="width:0.75rem;" src="assets/arrow-down.svg"> -->
                          <div class="navbar-select">
-                            <select>
-                                <option> My H&S </option>
-                                <option> My Favorites </option>
-                                <option> Edit Profile </option>
-                                <option> Basic Questions </option>
+                            <select id="nav-select">
+                                <option selected disabled> select </option>
+                                <option value="myhs.html"> My H&S </option>
+                                <option value="basicquestions.html"> Basic Questions </option>
+                                <option value="favorites.html"> My Favorites </option>
+                                <option value="profile.html"> Edit Profile </option>
                                 <option> Log Out </option>
                              </select>
+
+                             <script>
+                                // Get the select element
+                                const navSelect = document.getElementById('nav-select');
+                            
+                                // Add event listener for 'change' event
+                                navSelect.addEventListener('change', function () {
+                                    const selectedValue = this.value; // Get the selected value
+                            
+                                    if (selectedValue) {
+                                        window.location.href = selectedValue; // Redirect to the selected route
+                                    }
+                                });
+                            </script>
                          </div>
                     </div>
                 </div>
