@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HugOrShrug</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="convo2.css">
+    </head>
+    <body>
+        <div class="main-container">
+
+            <div class="navbar-container">
+
+                <div class="flex-gap-2">
+                    <img class="clickable" src="assets/logo.png"  onclick="window.location.href='index.html' " />
+                    <div class="flex-gap-2 tabs" style="flex-wrap: wrap;">
+                        <div class="navbar-option clickable" onclick="window.location.href='exploreTopics.html' "> Explore Topics </div>
+                        <div class="navbar-option clickable" onclick="window.location.href='allusers.html' "> Users </div>
+                        <div class="navbar-option clickable" onclick="window.location.href='hugs.html' "> Hugs </div>
+                        <div class="navbar-option clickable" onclick="window.location.href='shrugs.html' "> Shrugs </div>
+                    </div>
+                </div>
+
+                <div class="flex-gap-1">
+                    <!-- <button class="purple-action-btn">Share your thoughts</button> -->
+                    <img class="nav-green-btn" src="assets/green-add-btn.svg">
+                    <div class="profile-option" style="gap:0;">
+                        <img class="profile" src="https://randomuser.me/api/portraits/men/18.jpg">
+                        <!-- <img style="width:0.75rem;" src="assets/arrow-down.svg"> -->
+                         <div class="navbar-select">
+                            <select>
+                                <option> My H&S </option>
+                                <option> My Favorites </option>
+                                <option> Edit Profile </option>
+                                <option> Basic Questions </option>
+                                <option> Log Out </option>
+                             </select>
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="middle-sec">
+
+
+                <div class="flex-gap-1" style="justify-content: center;">
+                    <svg width="19" height="18" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 12L6.5 8L10.5 4" stroke="#4A3AFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                    <div style="color:rgba(74, 58, 255, 1);font-family: Sora;font-weight:700;cursor: pointer;"> Back to all </div>
+                </div>
+
+
+                <!-- LIST OF COMVERSATION BOXES -->
+                <div class="flex-col-gap-1">
+
+                    <div class="convobox">
+                        <div class="flex-sb" style="align-items: flex-start !important;">
+                            <div class="flex-gap-05 tags">
+                                <div class="redpart"> Food and Drink </div>
+                                <div class="greypart"> #food </div>
+                                <div class="greypart"> #tea </div>
+                            </div>
+                            <img id="openDialogBtn" class="clickable" src="assets/add-button-circle.svg" />
+                        </div>
+                        <div class="flex-gap-1 imgtext" style="align-items: flex-start;">
+                            <img class="convo-img" src="https://picsum.photos/200/300?random=1">
+                            <div class="convotext">
+
+                                <div>
+                                    Being underestimated is infuriating! People assume you can’t handle things, and it feels like your abilities are dismissed without a second thought. It’s frustrating and demeaning
+                                </div>
+                                <div style="text-align:right">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-gap-05">
+                        <div class="blue-section flex-gap-05">
+                            <img src="assets/blue-thumbup.svg" style="width:1.1rem;" />
+                            <span style="font-size:1rem;"> 8 </span>
+                        </div>
+                        <div class="red-section flex-gap-05">
+                            <img src="assets/red-thumbdown.svg" style="width:1.1rem;" />
+                            <span style="font-size:1rem;"> 12 </span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+        <footer class="footer">
+            <img src="assets/logo.png"  onclick="window.location.href='index.html' " />
+            <div class="flex-gap-2" style="flex-wrap: wrap;">
+                <div class="dmsans-white-md clickable "> About us </div>
+                <div class="dmsans-white-md clickable"> Contact us </div>
+                <div class="dmsans-white-md clickable"> Blogs </div>
+            </div>
+            <div class="dmsans-white-md"> © HugOrShrug 2024 </div>
+        </footer>
+
+        <!-- DIALOG -->
+        <dialog id="myDialog" class="input-dialog">
+            <div class="flex-col-gap-15" style="width:100%;">
+                <div style="width:100%;">
+                    <div class="sora-black-lg2" style="text-align: left;"> Hug or shrug </div>
+                </div>
+                <div class="iphone-toggle" style="align-items: flex-start; width:100%;">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label>                      
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Category</div>
+                    <select class="custom-input" style="border-radius:0.5rem;">
+                        <option>Entertainment and Leisure</option>
+                        <option>Entertainment and Leisure</option>
+                        <option>Entertainment and Leisure</option>
+                    </select>
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Title *</div>
+                    <input class="custom-input" value="Godzilla" />
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">#Tags</div>
+                    <input class="custom-input" value="#movie" />
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Note</div>
+                    <textarea placeholder="Type your notes here ..." style="height:3rem;" class="custom-input"></textarea>
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Link</div>
+                    <input class="custom-input" value="https://godzilla.com/" />
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Image (Optional)</div>
+                    <input type="file" />
+                </div>
+                <div class="flex-col-gap-05" style="width:100%;">
+                    <button class="purple-action-btn" style="width:100%;"> Submit </button>
+                    <button class="white-action-btn" style="width:100%;"  id="closeDialogBtn"> Cancel </button>
+                </div>
+            </div>
+        </dialog>
+
+        <script>
+
+            const dialog = document.getElementById('myDialog');
+            const openDialogBtn = document.getElementById('openDialogBtn');
+            const openDialogBtn2 = document.getElementById('openDialogBtn2');
+            const closeDialogBtn = document.getElementById('closeDialogBtn');
+        
+            // Open dialog on button click
+            openDialogBtn.addEventListener('click', () => {
+              dialog.showModal();
+            });
+            openDialogBtn2.addEventListener('click', () => {
+              dialog.showModal();
+            });
+        
+            // Close dialog on button click
+            closeDialogBtn.addEventListener('click', () => {
+              dialog.close();
+            });
+
+        </script>
+
+    </body>
+</html>
+
