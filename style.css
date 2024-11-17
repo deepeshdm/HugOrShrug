@@ -139,9 +139,27 @@ html,body{
   background: rgba(255, 255, 255, 1);
   font-family: DM Sans;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   color: rgba(74, 58, 255, 1);
   border: 1px solid rgba(74, 58, 255, 1);
+  outline: none;
+  cursor: pointer;
+
+  &:hover{
+    opacity: 0.5;
+  }
+}
+
+.red-action-btn{
+  padding: 0.25rem 1rem;
+  gap: 0.25rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 1);
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(250, 0, 23, 1);
+  border: 1px solid rgba(250, 0, 23, 1);
   outline: none;
   cursor: pointer;
 
@@ -180,6 +198,15 @@ html,body{
 .sora-black-md{
   font-family: Sora;
   font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;  
+}
+
+.sora-black-md2{
+  font-family: Sora;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: -0.01em;
   text-underline-position: from-font;
