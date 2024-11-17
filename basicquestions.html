@@ -1,0 +1,161 @@
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HugOrShrug</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="basicquestions.css">
+    </head>
+    <body>
+        <div class="main-container">
+
+            <div class="navbar-container">
+
+                <div class="flex-gap-2">
+                    <img class="clickable" src="assets/logo.png" onclick="window.location.href='index.html' " />
+                    <div class="flex-gap-2 tabs" style="flex-wrap: wrap;">
+                        <div class="navbar-option clickable" onclick="window.location.href='exploreTopics.html' "> Explore Topics </div>
+                        <div class="navbar-option clickable" onclick="window.location.href='allusers.html' "> Users </div>
+                        <div class="navbar-option clickable" onclick="window.location.href='hugs.html' "> Hugs </div>
+                        <div class="navbar-option clickable" onclick="window.location.href='shrugs.html' "> Shrugs </div>
+                    </div>
+                </div>
+
+                <div class="flex-gap-1">
+                    <!-- <button class="purple-action-btn">Share your thoughts</button> -->
+                    <img class="nav-green-btn" src="assets/green-add-btn.svg">
+                    <div class="profile-option" style="gap:0;">
+                        <img class="profile" src="https://randomuser.me/api/portraits/men/18.jpg">
+                        <!-- <img style="width:0.75rem;" src="assets/arrow-down.svg"> -->
+                         <div class="navbar-select">
+                            <select id="nav-select">
+                                <option selected disabled> select </option>
+                                <option value="myhs.html"> My H&S </option>
+                                <option value="basicquestions.html"> Basic Questions </option>
+                                <option value="favorites.html"> My Favorites </option>
+                                <option value="profile.html"> Edit Profile </option>
+                                <option> Log Out </option>
+                             </select>
+
+                             <script>
+                                // Get the select element
+                                const navSelect = document.getElementById('nav-select');
+                            
+                                // Add event listener for 'change' event
+                                navSelect.addEventListener('change', function () {
+                                    const selectedValue = this.value; // Get the selected value
+                            
+                                    if (selectedValue) {
+                                        window.location.href = selectedValue; // Redirect to the selected route
+                                    }
+                                });
+                            </script>
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- MIDDLE SECTION -->
+            <div class="community-section">
+
+
+                <div style="display:flex;align-items: center;justify-content: space-between;width:100%;">
+                    <div class="space"> </div>
+                    <div class="flex-col-gap-05 toptitle" style="margin-left:8rem;">
+                        <div class="sora-black-lg2"> Basic Questions </div>
+                        <div class="dmsans-black-md"> Answer the question or come up with your own! </div>
+                    </div>
+    
+                    <button class="purple-action-btn askquesbtn" style="margin-right:2rem;"> Add your question </button>
+                </div>
+
+                <div class="card-container">
+
+                    <div class="askcard" style="height: fit-content;gap:1.5rem;">
+                        <div class="title"> Favourite dish </div>
+                        <div style="color:rgba(132, 132, 132, 1);font-family: Sora;font-weight:400;"> Black </div>
+                        <button class="white-action-btn2" style="width: fit-content;">Edit</button>
+                    </div>
+
+                    <div class="askcard">
+                        <div class="title"> Favourite movie </div>
+                        <textarea class="answer_textarea" placeholder="Your answer here ..."></textarea>
+                        <button class="purple-action-btn" style="width: fit-content;">Save</button>
+                    </div>
+
+                    <div class="askcard">
+                        <div class="title"> Favourite book </div>
+                        <textarea class="answer_textarea" placeholder="Your answer here ..."></textarea>
+                        <button class="purple-action-btn" style="width: fit-content;">Save</button>
+                    </div>
+
+                    <div class="askcard">
+                        <div class="title"> Favourite song </div>
+                        <textarea class="answer_textarea" placeholder="Your answer here ..."></textarea>
+                        <button class="purple-action-btn" style="width: fit-content;">Save</button>
+                    </div>
+
+                    <div class="askcard">
+                        <div class="title"> Favourite show </div>
+                        <textarea class="answer_textarea" placeholder="Your answer here ..."></textarea>
+                        <button class="purple-action-btn" style="width: fit-content;">Save</button>
+                    </div>
+
+                    <div class="askcard">
+                        <div class="title"> Favourite place </div>
+                        <textarea class="answer_textarea" placeholder="Your answer here ..."></textarea>
+                        <button class="purple-action-btn" style="width: fit-content;">Save</button>
+                    </div>
+
+                    <div class="askcard">
+                        <div class="title"> Favourite actor </div>
+                        <textarea class="answer_textarea" placeholder="Your answer here ..."></textarea>
+                        <button class="purple-action-btn" style="width: fit-content;">Save</button>
+                    </div>
+
+                    <div class="askcard">
+                        <div class="title"> Favourite dish </div>
+                        <textarea class="answer_textarea" placeholder="Your answer here ..."></textarea>
+                        <button class="purple-action-btn" style="width: fit-content;">Save</button>
+                    </div>
+
+                    <div class="askcard">
+                        <div class="title"> Favourite dish </div>
+                        <textarea class="answer_textarea" placeholder="Your answer here ..."></textarea>
+                        <button class="purple-action-btn" style="width: fit-content;">Save</button>
+                    </div>
+
+                    <div class="askcard">
+                        <div class="title"> Favourite dish </div>
+                        <textarea class="answer_textarea" placeholder="Your answer here ..."></textarea>
+                        <button class="purple-action-btn" style="width: fit-content;">Save</button>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <footer class="footer">
+            <img src="assets/logo.png" onclick="window.location.href='index.html' " />
+            <div class="flex-gap-2" style="flex-wrap: wrap;">
+                <div class="dmsans-white-md clickable "> About us </div>
+                <div class="dmsans-white-md clickable"> Contact us </div>
+                <div class="dmsans-white-md clickable"> Blogs </div>
+            </div>
+            <div class="dmsans-white-md"> © HugOrShrug 2024 </div>
+        </footer>
+    </body>
+</html>
+
