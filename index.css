@@ -378,4 +378,58 @@
 
 
 
+.input-dialog{
+    width: 30%;
+    height: 85%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+  
+      &::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+}
+
+@media (max-width: 1200px) {
+
+    .input-dialog{
+        width: 40% !important;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .input-dialog{
+        width: 50% !important;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .input-dialog{
+        width: 60% !important;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .input-dialog{
+        width: 70% !important;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .input-dialog{
+        width: 80% !important;
+    }
+
+}
+
 

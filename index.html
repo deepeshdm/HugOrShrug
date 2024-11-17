@@ -29,7 +29,7 @@
 
                 <div class="flex-gap-1">
                     <!-- <button class="purple-action-btn">Share your thoughts</button> -->
-                    <img class="nav-green-btn" src="assets/green-add-btn.svg">
+                    <img class="nav-green-btn" src="assets/green-add-btn.svg" id="openDialogBtn">
                     <div class="profile-option" style="gap:0;">
                         <img class="profile" src="https://randomuser.me/api/portraits/men/18.jpg">
                         <!-- <img style="width:0.75rem;" src="assets/arrow-down.svg"> -->
@@ -618,6 +618,77 @@
             </div>
             <div class="dmsans-white-md"> © HugOrShrug 2024 </div>
         </footer>
+
+
+
+
+        <!-- DIALOG -->
+        <dialog id="myDialog" class="input-dialog">
+            <div class="flex-col-gap-15" style="width:100%;">
+                <div style="width:100%;">
+                    <div class="sora-black-lg2" style="text-align: left;"> Hug or shrug </div>
+                </div>
+                <div class="iphone-toggle" style="align-items: flex-start; width:100%;">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label>                      
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Category</div>
+                    <select class="custom-input" style="border-radius:0.5rem;">
+                        <option>Entertainment and Leisure</option>
+                        <option>Entertainment and Leisure</option>
+                        <option>Entertainment and Leisure</option>
+                    </select>
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Title *</div>
+                    <input class="custom-input" value="Godzilla" />
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">#Tags</div>
+                    <input class="custom-input" value="#movie" />
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Note</div>
+                    <textarea placeholder="Type your notes here ..." style="height:3rem;" class="custom-input"></textarea>
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Link</div>
+                    <input class="custom-input" value="https://godzilla.com/" />
+                </div>
+                <div class="flex-col-gap-05" style="align-items: flex-start; width:100%;">
+                    <div class="sora-black-md">Image (Optional)</div>
+                    <input type="file" />
+                </div>
+                <div class="flex-col-gap-05" style="width:100%;">
+                    <button class="purple-action-btn" style="width:100%;"> Submit </button>
+                    <button class="white-action-btn" style="width:100%;"  id="closeDialogBtn"> Cancel </button>
+                </div>
+            </div>
+        </dialog>
+
+        <script>
+
+            const dialog = document.getElementById('myDialog');
+            const openDialogBtn = document.getElementById('openDialogBtn');
+            const closeDialogBtn = document.getElementById('closeDialogBtn');
+        
+            // Open dialog on button click
+            openDialogBtn.addEventListener('click', () => {
+              dialog.showModal();
+            });
+        
+            // Close dialog on button click
+            closeDialogBtn.addEventListener('click', () => {
+              dialog.close();
+            });
+
+        </script>
+
+
+
     </body>
 </html>
 
