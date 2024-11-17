@@ -314,3 +314,33 @@ html,body{
   .nav-green-btn{
     cursor: pointer;
   }
+
+
+
+
+  .navbar-select {
+    position: relative;
+    display: inline-block;
+    width: 200px; /* Adjust width */
+  }
+  
+  .navbar-select select {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Safari support */
+    -moz-appearance: none; /* Firefox support */
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Space for the custom icon */
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    background: url('assets/arrow-down.svg') no-repeat right 10px center; /* Custom arrow icon */
+    background-size: 12px; /* Adjust icon size */
+  }
+  
+  .navbar-select select:focus {
+    outline: none; /* Remove focus outline */
+  }
+  
+  
