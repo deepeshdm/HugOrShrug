@@ -433,3 +433,11 @@
 }
 
 
+/* Global Style */
+.blue-section , .red-section {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+
