@@ -376,3 +376,12 @@ html,body{
     border-radius: 1rem;
   }
   
+
+  .grey-sm{
+    font-family: DM Sans;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #989898;
+  }
