@@ -370,4 +370,9 @@ html,body{
     outline: none; /* Remove focus outline */
   }
   
+
+  .comment-pic{
+    width: 1.75rem;
+    border-radius: 1rem;
+  }
   
