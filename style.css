@@ -385,3 +385,24 @@ html,body{
     text-decoration-skip-ink: none;
     color: #989898;
   }
+
+
+
+.mobile-tabs{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+
+  .navbar-option{
+
+    text-align: left;
+
+    &:hover{
+      font-weight: 600;
+    }
+  }
+
+}
+
+

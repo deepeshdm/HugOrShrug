@@ -254,11 +254,31 @@
     }
 }
 
+.toggle-btn{
+    display: none;
+}
+
+.mobile-tabs{
+    display: none;
+}
+
 
 @media (max-width: 950px) {
 
     .navbar-container .tabs{
         display: none;
+    }
+
+    .mobile-tabs{
+        display: none;
+    }
+
+    .select-dropdown{
+        display: none;
+    }
+
+    .toggle-btn{
+        display: flex;
     }
 
     .navbar-container{
